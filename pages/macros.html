@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClassicWarriorCraft</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Include FontAwesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <a href="#" class="logo">ClassicWarriorCraft</a>
+
+        <ul class="nav-links">
+          <li class="dropdown">
+            <a
+              href="#"
+              class="hamburger"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >☰</a
+            >
+            <ul class="dropdown-menu" aria-label="submenu">
+              <li><a href="#">Theory</a></li>
+              <li><a href="/index.html">Rotation</a></li>
+              <li><a href="#">Macros</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="blog-container">
+        <!-- Single Target -->
+        <article class="blog-post">
+          <header>
+            <h1 class="post-title">Macros</h1>
+          </header>
+
+          <p>
+            As a warrior, it's really important to start most of your abilities
+            with <code>/startattack</code>. <br />
+            However, <code>/startattack</code> is placed after
+            <em>Heroic Strike/Cleave</em> so that it gets applied before your
+            attack goes off.
+          </p>
+          <br />
+          <!-- Macro 1 -->
+          <div class="code-block">
+            <div class="code-title">Sunder Armor Macro</div>
+            <pre>
+          <code id="code-1">
+#showtooltip
+/startattack
+/cast Sunder Armor
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-1')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 2 -->
+          <div class="code-block">
+            <div class="code-title">Hamstring Macro</div>
+            <pre>
+          <code id="code-2">
+#showtooltip
+/startattack
+/cast Hamstring
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-2')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 3 -->
+          <div class="code-block">
+            <div class="code-title">Revenge Macro</div>
+            <pre>
+          <code id="code-3">
+#showtooltip
+/startattack
+/cast Defensive Stance
+/cast Revenge
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-3')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 4 -->
+          <div class="code-block">
+            <div class="code-title">Whirlwind Macro</div>
+            <pre>
+          <code id="code-4">
+#showtooltip
+/startattack
+/cast Berserker Stance
+/cast Whirlwind
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-4')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 5 -->
+          <div class="code-block">
+            <div class="code-title">Bloodthirst Macro</div>
+            <pre>
+          <code id="code-5">
+#showtooltip Bloodthirst
+/startattack
+/cast Bloodthirst
+/cancelaura Bloodthirst
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-5')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 6 -->
+          <div class="code-block">
+            <div class="code-title">Heroic Strike Macro</div>
+            <pre>
+          <code id="code-6">
+#showtooltip
+/cast Heroic Strike
+/startattack
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-6')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 7 -->
+          <div class="code-block">
+            <div class="code-title">Cleave Macro</div>
+            <pre>
+          <code id="code-7">
+#showtooltip
+/cast Cleave
+/startattack
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-7')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 8 -->
+          <div class="code-block">
+            <div class="code-title">Execute Macro</div>
+            <pre>
+          <code id="code-8">
+#showtooltip Execute
+/startattack
+/cast Execute
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-8')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 9 -->
+          <div class="code-block">
+            <div class="code-title">Berserker Rage Macro</div>
+            <pre>
+          <code id="code-9">
+#showtooltip
+/startattack
+/cast Berserker Stance
+/cast Berserker Rage
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-9')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 10 -->
+          <div class="code-block">
+            <div class="code-title">Pummel Macro</div>
+            <pre>
+          <code id="code-10">
+#showtooltip Pummel
+/startattack
+/cast [form:2,worn:Shields] Shield Bash
+/cast [noworn:Shields] Berserker Stance
+/cast [form:3] Pummel
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-10')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 11 -->
+          <div class="code-block">
+            <div class="code-title">Smart Pummel (mouseover) Macro</div>
+            <pre>
+          <code id="code-11">
+#showtooltip Pummel
+/startattack
+/cast [form:1/2,worn:Shields,@mouseover,harm,nodead][form:1/2,worn:Shields] Shield Bash
+/stopcasting [form:1/2,noworn:Shields]
+/cast [noworn:Shields] Berserker Stance
+/cast [form:3,@mouseover,harm,nodead][form:3] Pummel
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-11')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 12 -->
+          <div class="code-block">
+            <div class="code-title">Equip Shield Macro</div>
+            <pre>
+          <code id="code-12">
+#showtooltip
+/stopcasting [noworn:Shields]
+/equipslot 17 name-of-your-shield
+/equipslot 16 name-of-your-main-hand
+/cast Defensive Stance
+/cast Shield Block
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-12')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 13 -->
+          <div class="code-block">
+            <div class="code-title">Ranged (all-in-one) Macro</div>
+            <pre>
+          <code id="code-13">
+#showtooltip
+/cast [worn:Thrown] Throw; [worn:Bows] Shoot Bow; [worn:Guns] Shoot Gun; [worn:Crossbows] Shoot Crossbow
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-13')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 14 -->
+          <div class="code-block">
+            <div class="code-title">LIP Shout Macro</div>
+            <pre>
+          <code id="code-14">
+#showtooltip Challenging Shout
+/use Limited Invulnerability Potion
+/cast Bloodrage
+/cast Challenging Shout
+/s [ AoE Taunted! ]
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-14')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 15 -->
+          <div class="code-block">
+            <div class="code-title">Mocking Blow Macro</div>
+            <pre>
+          <code id="code-15">
+#showtooltip Mocking Blow
+/startattack
+/cast Battle Stance
+/cast Mocking Blow
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-15')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 16 -->
+          <div class="code-block">
+            <div class="code-title">Charge/Intercept Macro</div>
+            <pre>
+          <code id="code-16">
+#showtooltip [nocombat] Charge; Intercept
+/startattack
+/cast [nostance:1,nocombat] Battle Stance;[nostance:3,combat] Berserker Stance;
+/cast [nocombat] Charge; [combat] Intercept
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-16')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 17 -->
+          <div class="code-block">
+            <div class="code-title">Cancelling Macro</div>
+            <pre>
+          <code id="code-17">
+# add cancelaura to a macro you use a lot - like Bloodthirst
+/cancelaura Bloodthirst       
+/cancelaura Argent Dawn Commission
+/cancelaura Arcane Brilliance
+
+# removes error texts such as "not enough rage"
+/run UIErrorsFrame:Clear()
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-17')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+          <br />
+          <!-- Macro 18 -->
+          <div class="code-block">
+            <div class="code-title">Coldrage Dagger Macro</div>
+            <pre>
+          <code id="code-18">
+#showtooltip Coldrage Dagger 
+# double-click to equip both
+/castsequence reset=2 Coldrage Dagger
+/equipslot 17 Coldrage Dagger
+          </code>
+        </pre>
+            <button class="copy-btn" onclick="copyCode('code-18')">
+              <i class="fas fa-copy"></i>Copy
+            </button>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <script>
+      function copyCode(id) {
+        const code = document.getElementById(id).innerText;
+        navigator.clipboard
+          .writeText(code)
+          .then(() => alert("Code copied to clipboard!"))
+          .catch((err) => console.error("Failed to copy: ", err));
+      }
+    </script>
+  </body>
+</html>
